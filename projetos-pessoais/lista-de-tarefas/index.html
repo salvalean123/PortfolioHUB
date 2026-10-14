@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; display: grid; place-items: start center; min-height: 100vh; margin: 0; padding: 48px 16px; box-sizing: border-box; }
+    .box { background: #1e293b; padding: 32px; border-radius: 12px; width: min(460px, 100%); }
+    h1 { margin-top: 0; font-size: 1.5rem; }
+    form { display: flex; gap: 8px; }
+    input { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: inherit; font-size: 1rem; min-width: 0; }
+    button { padding: 10px 16px; border: 0; border-radius: 8px; background: #a78bfa; color: #0f172a; font-weight: 700; cursor: pointer; }
+    ul { list-style: none; padding: 0; margin: 20px 0 0; }
+    li { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #334155; }
+    li span { flex: 1; cursor: pointer; }
+    li.feita span { text-decoration: line-through; color: #64748b; }
+    .remover { background: transparent; color: #f87171; padding: 4px 8px; }
+    #contador { color: #94a3b8; font-size: .9rem; margin-top: 12px; }
+    a { color: #a78bfa; display: inline-block; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <h1>Lista de Tarefas</h1>
+    <form id="form">
+      <input id="nova" placeholder="Nova tarefa..." required aria-label="Nova tarefa">
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="lista"></ul>
+    <p id="contador"></p>
+    <a href="../../">← Voltar ao portfólio</a>
+  </main>
+
+  <script>
+    const CHAVE = 'portfoliohub-tarefas';
+    let tarefas = [];
+    try { tarefas = JSON.parse(localStorage.getItem(CHAVE)) || []; } catch { tarefas = []; }
+
+    function salvar() {
+      try { localStorage.setItem(CHAVE, JSON.stringify(tarefas)); } catch {}
+    }
+
+    function renderizar() {
+      const lista = document.getElementById('lista');
+      lista.innerHTML = '';
+      tarefas.forEach((t, i) => {
+        const li = document.createElement('li');
+        if (t.feita) li.classList.add('feita');
+
+        const texto = document.createElement('span');
+        texto.textContent = t.texto;
+        texto.title = 'Clique para concluir';
+        texto.onclick = () => { t.feita = !t.feita; salvar(); renderizar(); };
+
+        const remover = document.createElement('button');
+        remover.className = 'remover';
+        remover.textContent = '✕';
+        remover.setAttribute('aria-label', 'Remover tarefa');
+        remover.onclick = () => { tarefas.splice(i, 1); salvar(); renderizar(); };
+
+        li.append(texto, remover);
+        lista.appendChild(li);
+      });
+      const pendentes = tarefas.filter(t => !t.feita).length;
+      document.getElementById('contador').textContent = `${pendentes} pendente(s) de ${tarefas.length}`;
+    }
+
+    document.getElementById('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const campo = document.getElementById('nova');
+      tarefas.push({ texto: campo.value.trim(), feita: false });
+      campo.value = '';
+      salvar();
+      renderizar();
+    });
+
+    renderizar();
+  </script>
+</body>
+</html>
