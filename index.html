@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioHUB | Mateus Salvato Mendes da Costa</title>
+  <meta name="description" content="Portfólio de projetos acadêmicos e pessoais de Mateus Salvato Mendes da Costa.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <nav class="container nav">
+      <a href="#inicio" class="logo">Portfolio<span>HUB</span></a>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#documentos">Documentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <p class="tag">Olá, eu sou</p>
+        <h1>Mateus Salvato Mendes da Costa</h1>
+        <p class="sub">Estudante de Seu Curso · Desenvolvedor(a) em formação</p>
+        <div class="botoes">
+          <a class="btn" href="#projetos">Ver projetos</a>
+          <a class="btn btn-sec" href="https://github.com/SEU-USUARIO/PortfolioHUB" target="_blank" rel="noopener">Repositório no GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="container secao">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de <strong>Seu Curso</strong> na <strong>Sua Instituição</strong>. Gosto de transformar problemas do dia a dia em soluções com código. Este site reúne meus projetos acadêmicos e pessoais, todos versionados com Git e hospedados no GitHub.</p>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="container secao">
+      <h2>Projetos</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="selo">Acadêmico</span>
+          <h3>Calculadora de IMC</h3>
+          <p>Calcula o Índice de Massa Corporal a partir do peso e da altura e mostra a classificação.</p>
+          <p class="tec">HTML · CSS · JavaScript</p>
+          <div class="links">
+            <a href="projetos-academicos/calculadora-imc/">Abrir projeto</a>
+            <a href="https://github.com/SEU-USUARIO/PortfolioHUB/tree/main/projetos-academicos/calculadora-imc" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="selo pessoal">Pessoal</span>
+          <h3>Lista de Tarefas</h3>
+          <p>Adicione, conclua e remova tarefas. Os dados ficam salvos no navegador (localStorage).</p>
+          <p class="tec">HTML · CSS · JavaScript</p>
+          <div class="links">
+            <a href="projetos-pessoais/lista-de-tarefas/">Abrir projeto</a>
+            <a href="https://github.com/SEU-USUARIO/PortfolioHUB/tree/main/projetos-pessoais/lista-de-tarefas" target="_blank" rel="noopener">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="documentos" class="container secao">
+      <h2>Documentos e apresentação</h2>
+      <ul class="docs">
+        <li><a href="https://github.com/SEU-USUARIO/PortfolioHUB/blob/main/documentacao/README.md" target="_blank" rel="noopener">📄 Documentação do repositório</a></li>
+        <li><a href="https://github.com/SEU-USUARIO/PortfolioHUB/blob/main/CHANGELOG.md" target="_blank" rel="noopener">🏷️ Histórico de versões (CHANGELOG)</a></li>
+        <li><a href="LINK-DOS-SLIDES" target="_blank" rel="noopener">📊 Slides da apresentação</a></li>
+        <li><a href="LINK-DO-VIDEO" target="_blank" rel="noopener">🎥 Vídeo de apresentação (YouTube)</a></li>
+      </ul>
+    </section>
+
+    <section id="contato" class="container secao">
+      <h2>Contato</h2>
+      <div class="contatos">
+        <a href="https://www.linkedin.com/in/SEU-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:seu-email@exemplo.com">E-mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Mateus Salvato Mendes da Costa · PortfolioHUB v1.1</p>
+  </footer>
+
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>

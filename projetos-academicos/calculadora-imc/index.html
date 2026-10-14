@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; display: grid; place-items: center; min-height: 100vh; margin: 0; padding: 16px; box-sizing: border-box; }
+    .box { background: #1e293b; padding: 32px; border-radius: 12px; width: min(380px, 100%); }
+    h1 { margin-top: 0; font-size: 1.5rem; }
+    label { display: block; margin: 14px 0 6px; color: #94a3b8; }
+    input { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: inherit; font-size: 1rem; box-sizing: border-box; }
+    button { margin-top: 20px; width: 100%; padding: 12px; border: 0; border-radius: 8px; background: #38bdf8; color: #0f172a; font-weight: 700; font-size: 1rem; cursor: pointer; }
+    #resultado { margin-top: 20px; font-size: 1.1rem; min-height: 1.5em; }
+    a { color: #38bdf8; display: inline-block; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <h1>Calculadora de IMC</h1>
+    <form id="form">
+      <label for="peso">Peso (kg)</label>
+      <input id="peso" type="number" step="0.1" min="1" required placeholder="Ex.: 70">
+      <label for="altura">Altura (m)</label>
+      <input id="altura" type="number" step="0.01" min="0.5" required placeholder="Ex.: 1.75">
+      <button type="submit">Calcular</button>
+    </form>
+    <p id="resultado" aria-live="polite"></p>
+    <a href="../../">← Voltar ao portfólio</a>
+  </main>
+
+  <script>
+    function classificar(imc) {
+      if (imc < 18.5) return 'Abaixo do peso';
+      if (imc < 25) return 'Peso normal';
+      if (imc < 30) return 'Sobrepeso';
+      if (imc < 35) return 'Obesidade grau I';
+      if (imc < 40) return 'Obesidade grau II';
+      return 'Obesidade grau III';
+    }
+
+    document.getElementById('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const peso = parseFloat(document.getElementById('peso').value);
+      const altura = parseFloat(document.getElementById('altura').value);
+      const imc = peso / (altura * altura);
+      document.getElementById('resultado').textContent =
+        `IMC: ${imc.toFixed(1)} — ${classificar(imc)}`;
+    });
+  </script>
+</body>
+</html>
