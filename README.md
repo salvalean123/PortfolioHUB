@@ -20,7 +20,7 @@
 
 ## 👋 Sobre
 
-Olá! Sou **Mateus Salvato Mendes da Costa**, estudante de **Ciência da Computação** na **CEUB**. Este repositório reúne os projetos que desenvolvi durante a graduação e por conta própria, organizados para facilitar a navegação de recrutadores, professores e colegas.
+Olá! Sou **Mateus Salvato Mendes da Costa**, estudante do 3º semestre de **Ciência da Computação** no **UniCEUB – Centro Universitário de Brasília**. Este repositório reúne os projetos que desenvolvi durante a graduação e por conta própria, organizados para facilitar a navegação de recrutadores, professores e colegas.
 
 ## 🗂️ Estrutura do repositório
 

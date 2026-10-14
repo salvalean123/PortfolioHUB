@@ -28,4 +28,4 @@ IMC = peso / (altura × altura)
 
 ## Contexto
 
-Desenvolvido durante o curso de **Ciência da Computação** no **CEUB**.
+Desenvolvido durante o curso de **Ciência da Computação** no **UniCEUB**.
