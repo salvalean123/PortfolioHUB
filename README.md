@@ -2,9 +2,9 @@
 
 > Repositório central do meu portfólio: projetos acadêmicos, projetos pessoais e documentação, versionados com Git e publicados com GitHub Pages.
 
-🌐 **Site:** https://SEU-USUARIO.github.io/PortfolioHUB/
-💼 **LinkedIn:** https://www.linkedin.com/in/SEU-LINKEDIN
-🎥 **Apresentação (YouTube):** LINK-DO-VIDEO
+🌐 **Site:** https://salvalean123.github.io/PortfolioHUB/
+💼 **LinkedIn:** https://www.linkedin.com/in/mateus-salvato-68b724317
+🎥 **Apresentação (YouTube):** em breve
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## 👋 Sobre
 
-Olá! Sou **Mateus Salvato Mendes da Costa**, estudante de **Seu Curso** na **Sua Instituição**. Este repositório reúne os projetos que desenvolvi durante a graduação e por conta própria, organizados para facilitar a navegação de recrutadores, professores e colegas.
+Olá! Sou **Mateus Salvato Mendes da Costa**, estudante de **Ciência da Computação** na **CEUB**. Este repositório reúne os projetos que desenvolvi durante a graduação e por conta própria, organizados para facilitar a navegação de recrutadores, professores e colegas.
 
 ## 🗂️ Estrutura do repositório
 
@@ -69,13 +69,12 @@ O projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/) e [Co
 ## 💻 Como executar localmente
 
 ```bash
-git clone https://github.com/SEU-USUARIO/PortfolioHUB.git
+git clone https://github.com/salvalean123/PortfolioHUB.git
 cd PortfolioHUB
 # abra o index.html no navegador
 ```
 
 ## 📬 Contato
 
-- E-mail: seu-email@exemplo.com
-- LinkedIn: [linkedin.com/in/SEU-LINKEDIN](https://www.linkedin.com/in/SEU-LINKEDIN)
-- GitHub: [@SEU-USUARIO](https://github.com/SEU-USUARIO)
+- LinkedIn: [linkedin.com/in/mateus-salvato-68b724317](https://www.linkedin.com/in/mateus-salvato-68b724317)
+- GitHub: [@salvalean123](https://github.com/salvalean123)

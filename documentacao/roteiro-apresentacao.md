@@ -4,7 +4,7 @@ Grave a tela (OBS Studio, Xbox Game Bar `Win + G` ou Clipchamp) e publique no Yo
 
 | Tempo | Mostrar na tela | O que falar |
 |---|---|---|
-| 0:00–0:30 | Seu rosto ou o site aberto | "Olá, sou Mateus Salvato Mendes da Costa, estudante de Seu Curso. Vou apresentar o PortfolioHUB, meu repositório de projetos no GitHub." |
+| 0:00–0:30 | Seu rosto ou o site aberto | "Olá, sou Mateus Salvato Mendes da Costa, estudante de Ciência da Computação. Vou apresentar o PortfolioHUB, meu repositório de projetos no GitHub." |
 | 0:30–1:15 | Repositório no GitHub (lista de pastas) | Planejamento: explicar as seções — site na raiz, `projetos-academicos`, `projetos-pessoais`, `documentacao` — e a convenção de um projeto por pasta. |
 | 1:15–2:00 | Aba **Commits** e **Tags/Releases** | Versionamento: versão 1.0 inicial, alterações enviadas depois (v1.1), padrão de mensagens `feat:`/`docs:`; branches e pull requests para colaboração. |
 | 2:00–2:45 | README principal e de um projeto | Documentação: sumário, tabela de projetos, como executar, tecnologias. |

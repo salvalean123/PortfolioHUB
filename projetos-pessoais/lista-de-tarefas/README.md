@@ -2,7 +2,7 @@
 
 Projeto pessoal de estudo: uma lista de tarefas (to‑do list) simples que guarda os dados no próprio navegador.
 
-🔗 **Demonstração:** https://SEU-USUARIO.github.io/PortfolioHUB/projetos-pessoais/lista-de-tarefas/
+🔗 **Demonstração:** https://salvalean123.github.io/PortfolioHUB/projetos-pessoais/lista-de-tarefas/
 
 ## Funcionalidades
 

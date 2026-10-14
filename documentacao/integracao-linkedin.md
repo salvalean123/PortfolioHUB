@@ -8,7 +8,7 @@
    - **Descrição:** Repositório com meus projetos acadêmicos e pessoais, versionados com Git e publicados com GitHub Pages.
    - **Competências:** Git, GitHub, HTML, CSS, JavaScript
    - **Associado a:** seu curso/instituição
-   - **Mídia → Adicionar link:** `https://SEU-USUARIO.github.io/PortfolioHUB/`
+   - **Mídia → Adicionar link:** `https://salvalean123.github.io/PortfolioHUB/`
 3. Salvar.
 
 ## 2. Adicionar em "Destaques" (Featured)
@@ -17,13 +17,13 @@
 
 ## 3. Link no topo do perfil
 
-Lápis de edição da introdução → **Site** → cole `https://github.com/SEU-USUARIO` (rótulo: Portfólio).
+Lápis de edição da introdução → **Site** → cole `https://github.com/salvalean123` (rótulo: Portfólio).
 
 ## 4. Post de divulgação (opcional)
 
 > 🚀 Publiquei meu **PortfolioHUB**! Um repositório no GitHub com meus projetos acadêmicos e pessoais, versionado com Git e publicado com GitHub Pages.
-> 🌐 Site: https://SEU-USUARIO.github.io/PortfolioHUB/
-> 💻 Código: https://github.com/SEU-USUARIO/PortfolioHUB
+> 🌐 Site: https://salvalean123.github.io/PortfolioHUB/
+> 💻 Código: https://github.com/salvalean123/PortfolioHUB
 > #Git #GitHub #DesenvolvimentoWeb #Portfolio
 
 ## 5. No GitHub, o caminho de volta

@@ -2,7 +2,7 @@
 
 Projeto acadêmico que calcula o **Índice de Massa Corporal (IMC)** a partir do peso e da altura e mostra a classificação segundo a OMS.
 
-🔗 **Demonstração:** https://SEU-USUARIO.github.io/PortfolioHUB/projetos-academicos/calculadora-imc/
+🔗 **Demonstração:** https://salvalean123.github.io/PortfolioHUB/projetos-academicos/calculadora-imc/
 
 ## Funcionalidades
 
@@ -28,4 +28,4 @@ IMC = peso / (altura × altura)
 
 ## Contexto
 
-Desenvolvido para a disciplina **NOME DA DISCIPLINA** — **Sua Instituição**, semestre XXXX.X.
+Desenvolvido durante o curso de **Ciência da Computação** no **CEUB**.
