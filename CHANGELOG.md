@@ -15,3 +15,6 @@ Todas as mudanças relevantes deste repositório. Formato baseado em [Keep a Cha
 - Estrutura inicial de diretórios.
 - Página web inicial (GitHub Pages) com seções Sobre, Projetos e Contato.
 - Projeto acadêmico **Calculadora de IMC**.
+
+[1.1]: https://github.com/salvalean123/PortfolioHUB/compare/v1.0...v1.1
+[1.0]: https://github.com/salvalean123/PortfolioHUB/releases/tag/v1.0
